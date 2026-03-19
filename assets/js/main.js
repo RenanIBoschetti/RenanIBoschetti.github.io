@@ -399,3 +399,67 @@
 					});
 
 })(jQuery);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+   /* =====================================
+   Lazy Section Image Loader
+===================================== */
+
+function loadSectionImages(articleId) {
+
+    const article = document.getElementById(articleId);
+    if (!article) return;
+
+    const imgs = article.querySelectorAll("img[data-src]");
+
+    imgs.forEach(img => {
+
+        if (!img.src) {
+
+            img.src = img.dataset.src;
+
+            img.onload = () => {
+                img.classList.add("loaded");
+            };
+
+        }
+    });
+}
+
+/* Detect navigation clicks */
+document.querySelectorAll('nav a').forEach(link => {
+
+    link.addEventListener('click', function () {
+
+        const id = this.getAttribute('href').replace('#', '');
+        loadSectionImages(id);
+
+    });
+
+});
+
+/* =====================================
+   Lazy PDF Loader
+===================================== */
+
+document.querySelectorAll('.pdf-link').forEach(link => {
+
+    link.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        const pdf = this.dataset.pdf;
+
+        if (pdf) {
+            window.open(pdf, '_blank');
+        }
+
+    });
+
+});
+
+});
+
