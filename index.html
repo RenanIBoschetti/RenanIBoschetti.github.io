@@ -52,7 +52,8 @@
 							<div class="inner">
 								<h1>Renan Boschetti</h1>
 								<p>renan.boschetti@gmail.com
-								<br><a href="pdf/My_CV_30_06_25.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></p>
+								<!--<br><a href="pdf/My_CV_30_06_25.pdf" target="_blank" rel="noopener noreferrer" class="pdf-link">Curriculum Vitae</a></p>-->
+								<br><a class="pdf-link" data-pdf="pdf/My_CV_30_06_25.pdf">Curriculum Vitae</a></p>
 							</div>
 						</div>
 						<nav>
@@ -83,7 +84,7 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/about2.jpg" alt="" /></span>
+								<span class="image main"><img src="images/about2.jpg" loading="lazy"  alt="" /></span>
 								<p>I am a theoretical/computational physicist with a primary interest in cosmology, from the point of view of theory and simulations. More specifically, I am interested in testing fundamental physics using information from Large-Scale Structures (LLS).</p>
 								<p>I obtained my undergrad and master's degree at the University of São Paulo (USP), Brazil, followed by a PhD at the University of Aix-Marseille.</p>
 								<p>During my masters, I worked with the multi-tracer technique to improve constrains on the growth-rate of structures, an important observable to test gravity on large-scales.</p>
@@ -94,9 +95,9 @@
 						<!-- Thesis/Dissertation -->
 							<article id="thesis">
 								<h2 class="major">Thesis/Dissertation</h2>
-								<p><a href="pdf/Defense_PDF.pdf" target="_blank" rel="noopener noreferrer">These are slides showing the work I developed during my PhD</a> - University of Aix-Marseille</p>
-								<p><a href="pdf/Thesis_final.pdf" target="_blank" rel="noopener noreferrer">Advancements towards precision cosmology with Void-Lensing: Observational aspects and modelling</a> <br>PhD Thesis (Feb 6, 2024) - University of Aix-Marseille</p>
-								<p><a href="pdf/Dissertação-2.pdf" target="_blank" rel="noopener noreferrer">Constraining theories of gravity through redshift-space distortions</a> <br>Master's Dissertation (Mar, 2020) - University of São Paulo (USP)</p>
+								<p><a class="pdf-link" data-pdf="pdf/Defense_PDF.pdf">These are slides showing the work I developed during my PhD</a> - University of Aix-Marseille</p>
+								<p><a class="pdf-link" data-pdf="pdf/Thesis_final.pdf">Advancements towards precision cosmology with Void-Lensing: Observational aspects and modelling</a> <br>PhD Thesis (Feb 6, 2024) - University of Aix-Marseille</p>
+								<p><a class="pdf-link" data-pdf="pdf/Dissertação-2.pdf">Constraining theories of gravity through redshift-space distortions</a> <br>Master's Dissertation (Mar, 2020) - University of São Paulo (USP)</p>
 							</article>
 
 						<!-- Research
@@ -181,7 +182,7 @@
 									<div class="column">
 										<a href="https://github.com/RenanIBoschetti/Void_Lensing/blob/main/3D_Void_Finder_sim_MD_MPI_overlap.py" target="_blank" rel="noopener noreferrer"><div class="slideshow-container" data-cycle="5000"> <!--5seconds-->
 											<div class="mySlides fade"> <span class="image fit">
-												<span class="image slides"><img src="/images/voids_xz_gadget_delta_t_0.4_ymin_0_ymax_30.png" style="width:100%"></span>
+												<span class="image slides"><img src="/images/voids_xz_gadget_delta_t_0.4_ymin_0_ymax_30.png" style="width:100%" loading="lazy" ></span>
 											</div>
 											<div class="text">Void Finder</div>
 										</div> </a>
@@ -190,7 +191,7 @@
 									<div class="column">
 										<a href="https://github.com/RenanIBoschetti/Void_Lensing/blob/main/3D_Void_Profile_tree_corr_all_boxes.py" target="_blank" rel="noopener noreferrer"><div class="slideshow-container" data-cycle="5000"> <!--5seconds-->
 											<div class="mySlides fade"> <span class="image fit">
-												<span class="image slides"><img src="/images/Profiles_sim.jpeg" style="width:100%"></span>
+												<span class="image slides"><img src="/images/Profiles_sim.jpeg" style="width:100%" loading="lazy" ></span>
 											</div>
 											<div class="text">Void Profile estimator</div>
 										</div> </a>
@@ -203,7 +204,7 @@
 									<div class="column"> 
 										<a href="https://github.com/RenanIBoschetti/Void_Lensing/blob/main/Optimized_DSME_2D_version_stage0v4_whole_sphere_all_zs_.py" target="_blank" rel="noopener noreferrer"><div class="slideshow-container" data-cycle="5000"> <!--5seconds-->
 											<div class="mySlides fade"> <span class="image fit">
-												<span class="image slides"><img src="/images/comp_DS_t_pred_all.jpg" style="width:100%"></span>
+												<span class="image slides"><img src="/images/comp_DS_t_pred_all.jpg" style="width:100%" loading="lazy" ></span>
 											</div>
 											<div class="text">Differential Surface mass density estimator</div>
 										</div> </a>
@@ -212,7 +213,7 @@
 									<div class="column">
 										<a href="https://github.com/RenanBoschetti/Fisher_constraints" target="_blank" rel="noopener noreferrer"><div class="slideshow-container" data-cycle="5000"> <!--5seconds-->
 											<div class="mySlides fade"> <span class="image fit">
-												<span class="image slides"><img src="/images/JPAS.png" style="width:100%"></span>
+												<span class="image slides"><img src="/images/JPAS.png" style="width:100%" loading="lazy" ></span>
 											</div>
 											<div class="text">Fisher Constraints</div>
 										</div> </a>
@@ -264,7 +265,7 @@
 								</script>
 							</article>
 
-							<!-- Contact -->
+							<!-- Contact
 								<article id="contact">
 									<h2 class="major">Contact</h2>
 									<form method="post" action="#">
@@ -293,9 +294,9 @@
 										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									</ul>
-								</article>
+								</article> -->
 
-						<!-- Elements -->
+						<!-- Elements
 							<article id="elements">
 								<h2 class="major">Elements</h2>
 
@@ -535,7 +536,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</form>
 								</section>
 
-							</article>
+							</article> -->
 
 						<!-- Recommendations
 							<article id="recommendations">
@@ -580,13 +581,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<!-- Teaching -->
 							<article id="teaching">
 								<h2 class="major">Teaching</h2>
+								<p>Here are some lectures I gave recently:</p>
+								<p><a class="pdf-link" data-pdf="pdf/Normalizing_flows_lecture.pdf">Normalizing Flows</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Cosmology_course_uzh.pdf">A Friendly Introduction to Cosmology — Lecture I</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Cosmology_course_uzh_lecture_2.pdf">A Friendly Introduction to Cosmology — Lecture II</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Cosmology_uzh_lecture_3.pdf">A Friendly Introduction to Cosmology — Lecture III</a></p>
 								<p>I was a teaching assistant in a cosmology course at the Universe of São Paulo in 2020. During this course, I created some exercises that can be found here.</p>
-								<p><a href="pdf/Gabarito_Lista_2.pdf" target="_blank" rel="noopener noreferrer">Exercise list 1</a></p>
-								<p><a href="pdf/Lista_4___gabarito.pdf" target="_blank" rel="noopener noreferrer">Exercise list 2</a></p>
-								<p><a href="pdf/Lista_5___Gabarito.pdf" target="_blank" rel="noopener noreferrer">Exercise list 3</a></p>
-								<p><a href="pdf/Lista_6___Gabarito.pdf" target="_blank" rel="noopener noreferrer">Exercise list 4</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Gabarito_Lista_2.pdf">Exercise list 1</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Lista_4___gabarito.pdf">Exercise list 2</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Lista_5___Gabarito.pdf">Exercise list 3</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Lista_6___Gabarito.pdf">Exercise list 4</a></p>
 								<p>During my undergraduate days, I used to give calculus lectures to students from oceanography, economics, and other disciplines. These are my lecture notes.</p>
-								<p><a href="pdf/Apostila_Cálculo.pdf" target="_blank" rel="noopener noreferrer">Calculus I notes</a></p>
+								<p><a class="pdf-link" data-pdf="pdf/Apostila_Cálculo.pdf">Calculus I notes</a></p>
 							</article>
 
 						<!-- Personal -->
@@ -618,21 +624,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							<article id="Photography">
 								<h2 class="major"><a class="back" href="#personal">&#10094;</a> Photography </h2>
 
-								<img src="images/Photo_01.jpg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_01.jpg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<Pp>Unkown tree in Mata da Camara's park, Brazil.</p>
-								<img src="images/Photo_02.jpg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_02.jpg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Buracão's waterfall in Chapada Diamantina's park, Brazil</p>
-								<img src="images/Photo_03.jpeg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_03.jpeg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Sossego's waterfall in Chapada Diamantina's park, Brazil. This picture was taken by my wife Fernanda Leite</p>
-								<img src="images/Photo_04.jpeg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_04.jpeg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Unkown type of rock formation in Mata da Camara's park, Brazil.</p>
-								<img src="images/Photo_05.jpeg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_05.jpeg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Unkown type of rock formation in Mata da Camara's park, Brazil.</p>
-								<img src="images/Photo_06.jpeg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_06.jpeg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Stalactites and Stalagmites in the Devil's cave, Brazil.</p>
-								<img src="images/Photo_07.jpeg" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_07.jpeg" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Stalactites and Stalagmites in the Devil's cave, Brazil.</p>
-								<img src="images/Photo_08.JPG" style="width:100%; border-radius: 7.5px"  alt="" />
+								<img src="images/Photo_08.JPG" style="width:100%; border-radius: 7.5px" loading="lazy"  alt="" />
 								<p>Vegetation in the PETAR park, Brazil.</p>
 
 								<p><a href="#personal">Back</a></p>
